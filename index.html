@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="review-comparator-amazon">
+    <meta name="author" content="">
+
+    <title>Pregled</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="abc.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+   <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/normalize.css">
+
+    
+        <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      .me {
+  /*display: block;
+  */margin: 2em auto;
+  margin-bottom: 3em;
+  margin-left: 9em;
+  margin-top: 4em;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+}
+.mySpan{
+  margin-left: 8em;
+}
+.social {
+  text-align: center;
+  /*margin-left: 7em;*/
+  font-size: 2.5em;
+  color: #555;
+  overflow: hidden;
+
+}
+.social a {
+  color: inherit;
+  text-decoration: none;
+}
+.social i {
+  margin: .3em;
+  cursor: pointer;
+  transition: color 300ms ease, margin-top 300ms ease;
+  transform: translateZ(0);
+}
+.social i:hover {
+  margin-top: -1px;
+}
+.social i#twitter:hover {
+  color: #77DDF6;
+}
+.social i#github:hover {
+  color: blue;
+}
+.social i#linkedin:hover {
+  color: #0177B5;
+}
+.social i#code:hover {
+  color: blue;
+}
+.social i#stack:hover {
+  color: #ED780E;
+}
+.social i#plus:hover {
+  color: #0177B5;
+}
+.social i#mail:hover {
+  color: #77DDF6;;
+}
+.se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    margin-left: 43%;
+    margin-top: 20%;
+    width: 14%;
+    height: 20%;
+    z-index: 9999;
+    
+}
+ </style>
+
+    
+        <script src="js/prefixfree.min.js"></script>
+
+<script type="text/javascript">
+  function loader()
+  {
+    if(document.getElementById('usr').value.trim()=="")
+        return;
+    console.log("aja");
+    document.getElementById('img').setAttribute("class","se-pre-con");
+    document.getElementById('img').style.display="inline";
+    document.getElementById('img').setAttribute("src","./spin.gif");
+    console.log("aja");
+  }
+</script>    
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">PREGLED<sup>beta</sup></a>
+                
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Developers</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1>You can get Analysis of all the reviews of a Product</h1>
+                <hr>
+                <h4>We currently analyse reviews of Products on <a  href="http://www.amazon.in" >Amazon</a> only</h4>
+                <p>You just need the product url</p>
+                <a href="#about" class="btn btn-primary btn-xl page-scroll">Find out more</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">We've got what you need!</h2>
+                    <hr class="light">
+                    <p class="text-faded">You just enter the product url and we provide you with a summarized version of all the reviews.<sup>*</sup></p>
+                    <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Get Started!</a>
+                    <p style="font-size:10px;margin-top:10%" align="centre"><sup>*</sup>  If the no. of reviews of a product are more than 500 than we will anlayse first 500 (latest) reviews</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">At Your Service</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <img src="" id="img" style="display:none"  />
+        <div class="container">
+            <form action="abc" method="post">
+            <div class="row">
+                <div class="form-group">
+                    <label for="usr">Product URL</label>
+                    <input type="url" class="form-control" id="usr" name = "usr" placeholder="Enter your product url here!" required>
+                </div>    
+             </div>
+             <br><br>
+             <div class="row">
+                    <div class="container text-center">
+                         <input type="submit" class="btn-info btn btn-lg" onclick="loader()">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+<div id="contact" style="margin-bottom:-30">
+     <h2 class="section-heading centre"  style="margin-left: 45%">Developers</h2>
+        <hr class="primary">
+ </div>   
+     
+ <div class="container text-centre"> 
+      <div class="row">
+           <div class="col-xs-12 col-sm-12col-md-4 col-lg-4">
+                <img class="me " src="./dp.jpg" alt="" >             
+                <h4 class="section-heading centre" ><span class="mySpan">Ajay Aneja</span></h4>
+                <div class="social">
+                      <a href="https://www.facebook.com/ajay.aneja.906"><i id="code" class="icon-facebook"></i></a>
+                      <a href="https://in.linkedin.com/in/ajayaneja896"><i id="plus" class="icon-linkedin-sign"></i></a>
+                      <a href="https://twitter.com/ajayaneja896"><i id="mail" class="icon-twitter"></i></a>                   
+                </div>
+               
+           </div>
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"></div>
+           <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" >
+                  <img class="me" src="./sc.jpg" alt="" />
+                  <h4 class="section-heading centre"><span class="mySpan">Shubham Chhabra</span></h4>
+                  <div class="social" style="margin-left : 2em"> 
+                  <a href="https://www.facebook.com/profile.php?id=1845280896"><i id="github" class="icon-facebook"></i></a>
+                  <a href="https://www.linkedin.com/in/shubham-chhabra-223912102"><i id="stack" class="icon-linkedin-sign"></i></a>
+                  <a href="https://twitter.com/Shubham_687"><i id="linkedin" class="icon-twitter"></i></a>
+                 
+                </div>
+            </div>
+      </div>
+ </div>    
+<div>
+	<p style="text-align:center">We use <a href="www.alchemyapi.com">Alchemy API</a> to do the sentiment anlaysis </p>
+</div>
+
+<!-- <h4 class="section-heading centre" style="text-align: center" ></h4>
+
+<div class="social">
+  
+</div>
+ -->
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+   <script src="js/index.js"></script>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/scrollreveal.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+
+</body>
+
+</html>
